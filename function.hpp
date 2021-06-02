@@ -26,7 +26,7 @@ Graph* createGraph(int V){
 }
 
 // Perintah untuk menambahkan edge 
-void addEdge(struct Graph* graph, int asal, int tujuan, int jarak, int tkt_kemacetan){  //
+void addEdge(struct Graph* graph, int asal, int tujuan, float jarak, int tkt_kemacetan){  //
 	// Menambahkan edge dari vertex asal ke tujuan. Node baru ditambahkan ke list dari asal. node ditambahkan dibagian awal
 	struct ListNode* newNode = newListNode(tujuan, jarak, tkt_kemacetan); // 
 	newNode->next = graph->array[asal].head; 
